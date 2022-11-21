@@ -19,6 +19,10 @@ header{
     overflow: hidden;
 }
 
+h1{
+    font-size: 3rem;
+}
+
 .header__container{
     text-align: center;
     height: 100%;
@@ -58,10 +62,10 @@ header{
     height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    margin-top: 3rem;
+    border-radius: 12rem 12rem 5rem 5rem;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem  1.5rem;
+    padding: 0 .5rem .7rem  .5rem;
 }
 
 /* ==================  Scroll Down ================ */
@@ -77,7 +81,11 @@ header{
 /* =================== MEDIA QUERIES  (MEDIUM DEVICES) =================== */
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
+        height: 80vh;
+    }
+
+    .me{
+        padding: -1rem -1rem 1rem 1rem;
     }
 }
 
@@ -85,6 +93,7 @@ header{
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+        padding-top: 3rem;
     }
 
     .header__socials,

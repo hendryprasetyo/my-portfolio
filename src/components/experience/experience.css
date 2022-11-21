@@ -1,3 +1,7 @@
+section{
+    padding-top: 5rem;
+}
+
 .experience__container{
     display: grid;
     grid-template-columns: 1fr  1fr;
@@ -41,6 +45,9 @@
 
 /* =================== MEDIA QUERIES  (MEDIUM DEVICES) =================== */
 @media screen and (max-width: 1024px){
+    section{
+        padding-top: 0;
+    }
     .experience__container{
         grid-template-columns: 1fr;
     }
