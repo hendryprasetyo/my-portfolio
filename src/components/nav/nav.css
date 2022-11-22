@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 601px ){
     nav{
         background-color:var(--color-primary) ;
@@ -67,14 +68,11 @@
     }
 }
 
-
-
 @media screen and (max-width: 600px ){
     nav{
         background-color: rgba(0, 0, 0, .3);
         width: max-content;
-        display: block;
-        padding: .7rem 1.7rem;
+        padding: .7rem 1.8rem;
         z-index: 2;
         position: fixed;
         left: 50%;
@@ -111,4 +109,12 @@
         display: none;
     }
     
+}
+
+
+
+@media screen and (max-width: 400px ){
+    nav{
+        padding: .4rem .5rem;
+    }
 }

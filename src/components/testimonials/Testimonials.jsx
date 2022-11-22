@@ -1,4 +1,4 @@
-import AVATAR1 from '../../assets/1.jpg'
+import AVATAR1 from '../../assets/8.jpg'
 import AVATAR2 from '../../assets/2.jpg'
 import AVATAR3 from '../../assets/3.jpg'
 import React from 'react'
@@ -17,28 +17,33 @@ import 'swiper/css/pagination';
 const data = [
   {
     avatar: AVATAR1,
-    name: 'jojon',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam minima odit unde! Adipisci sed repellendus expedita voluptate officia nisi quos ullam aperiam. Nihil temporibus excepturi accusamus qui aliquam et saepe! Fugiat maiores sequi magni exercitationem officiis quaerat atque qui et. Obcaecati iusto ab maxime possimus repellendus quod! Tenetur, dolores? '
+    name: 'Hedry Prasetyo',
+    title:  'CEO BCA Group',
+    review: 'Saya sangat senang bekerjasama dengan Hendry,  saya puas dengan hasil kerja nya  dan bagaimana cara dia merespon semua kemauan saya sebagai client. Good Job for Hendry Development'
   },
   {
     avatar: AVATAR2,
     name: 'Pardi',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam minima odit unde! Adipisci sed repellendus expedita voluptate officia nisi quos ullam aperiam. Nihil temporibus excepturi accusamus qui aliquam et saepe! Fugiat maiores sequi magni exercitationem officiis quaerat atque qui et. Obcaecati iusto ab maxime possimus repellendus quod! Tenetur, dolores? '
+    title:  'CEO BCA Group',
+    review: 'Lorem ipsum dolor sit amet consectetur adipisicing'
   },
   {
     avatar: AVATAR3,
-    name: 'sabtu',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam minima odit unde! Adipisci sed repellendus expedita voluptate officia nisi quos ullam aperiam. Nihil temporibus excepturi accusamus qui aliquam et saepe! Fugiat maiores sequi magni exercitationem officiis quaerat atque qui et. Obcaecati iusto ab maxime possimus repellendus quod! Tenetur, dolores? '
+    name: 'Rian',
+    title:  'CEO BCA Group',
+    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam minima odit unde! Adipisci sed repellendus expedita voluptate officia nisi quos ullam aperiam. Nihil '
   },
   {
     avatar: AVATAR1,
     name: 'Aris',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam minima odit unde! Adipisci sed repellendus expedita voluptate officia nisi quos ullam aperiam. Nihil temporibus excepturi accusamus qui aliquam et saepe! Fugiat maiores sequi magni exercitationem officiis quaerat atque qui et. Obcaecati iusto ab maxime possimus repellendus quod! Tenetur, dolores? '
+    title:  'CEO BCA Group',
+    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam minima odit unde! Adipisci sed repellendus expedita voluptate officia nisi quos ullam aperiam. Nihil temporibus excepturi accusamus qui aliquam et saepe! Fugiat  '
   },
   {
     avatar: AVATAR1,
     name: 'Iban',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam minima odit unde! Adipisci sed repellendus expedita voluptate officia nisi quos ullam aperiam. Nihil temporibus excepturi accusamus qui aliquam et saepe! Fugiat maiores sequi magni exercitationem officiis quaerat atque qui et. Obcaecati iusto ab maxime possimus repellendus quod! Tenetur, dolores? '
+    title:  'CEO BCA Group',
+    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam minima odit unde! Adipisci sed repellendus'
   },
   
 ]
@@ -57,13 +62,14 @@ const Testimonials = () => {
       navigation
       pagination={{ clickable: true }}      >
         {
-          data.map(({avatar, name, review}, index) => {
+          data.map(({avatar, name, title, review}, index) => {
             return(
               <SwiperSlide key={index} className="testimonials">
                 <div className="client__avatar">
-                  <img src={avatar} alt="" />
+                  <img clasName='avatar' src={avatar} alt="testimonials" />
                 </div>
-                  <h5 className='client__name'>{name}</h5>
+                  <h3 className='client__name'>{name}</h3>
+                  <h5 className='client__title'>{title}</h5>
                   <small className='client__review'>{review}</small>
               </SwiperSlide>
             )

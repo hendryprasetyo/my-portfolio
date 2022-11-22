@@ -1,10 +1,13 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import {MdOutlineEmail} from 'react-icons/md'
 import emailjs from 'emailjs-com';
 import {RiMessengerLine, RiWhatsappLine} from 'react-icons/ri'
+import Popup from '../popUp/Popup';
 import './contact.css'
 
 const Contact = () => {
+
+  const  [notif,  setNotif] = useState(false)
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -43,7 +46,8 @@ const Contact = () => {
             <input type="text" name='name' placeholder='Your Full Name' required />
             <input type="email" name='email' placeholder='Your Email' required />
             <textarea name="message"  rows="7" placeholder='Your Message' required></textarea>
-            <button type='submit' className='btn btn-primary'>Send Message</button>
+            <button type='submit' className='btn btn-primary' onClick={()=> setNotif(true)}>Send Message</button>
+            <Popup trigger={notif} setTriger={setNotif}></Popup>
           </form>
       </div>
     </section>

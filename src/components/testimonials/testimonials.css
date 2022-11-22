@@ -9,13 +9,15 @@
     overflow: hidden;
     margin: 0 auto 1rem;
     border-radius: 50%;
-    object-fit: fill;
-    border: .4rem solid var(--color-primary-variant);
+    border: .3rem solid var(--color-primary-variant);
 }
 
-.client__avatar img{
+.avatar{
     object-fit: cover;
-
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    
 }
 
 .testimonials{
@@ -26,12 +28,17 @@
     user-select: none;
 }
 
+.client__title{
+    font-size: .9rem;
+}
+
 .client__review {
     color: var(--color-light);
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1rem;
     display: block;
     width: 80%;
-    margin: .8rem auto 0;
+    margin: .5rem auto 0;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {

@@ -1,6 +1,10 @@
 section{
     padding-top: 5rem;
 }
+
+h5{
+    font-size: 1rem;
+}
 .about__container  {
     display: grid;
     grid-template-columns: 35% 50%;
@@ -9,7 +13,7 @@ section{
 
 .about__me{
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1.24;
     border-radius: 2rem;
     background: linear-gradient(
         45deg,
@@ -60,7 +64,7 @@ section{
 }
 
 .about__card h5{
-    font-size: .95rem;
+    font-size: 1rem;
 }
 
 .about__card small{
