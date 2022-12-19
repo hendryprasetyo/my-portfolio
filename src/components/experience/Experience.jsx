@@ -27,7 +27,7 @@ function Experience() {
         <h5 className="sm:text-lg text-gray-400 ">My Recent Work</h5>
       </div>
 
-      <div className="container experience__container">
+      <div className="container experience__container justify-center">
         <motion.div
           initial={{ y: -200, opacity: 0 }}
           whileInView={{ opacity: 1, y: 0 }}

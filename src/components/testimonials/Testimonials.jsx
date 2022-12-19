@@ -15,7 +15,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import ExperienceCard from "../ExperienceCard";
+import ExperienceCard from "./ExperienceCard";
 
 const data = [
   {
