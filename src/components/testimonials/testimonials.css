@@ -1,76 +1,67 @@
-.container.testimonials__container{
-    width: 40%;
-    padding-bottom: 4rem ;
+.client__avatar {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 0.3rem solid var(--color-primary-variant);
 }
 
-.client__avatar{
-    width: 4rem;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    margin: 0 auto 1rem;
-    border-radius: 50%;
-    border: .3rem solid var(--color-primary-variant);
+.avatar {
+  object-fit: cover;
+  position: absolute;
+  padding: 20px;
+  top: 0;
 }
 
-.avatar{
-    object-fit: cover;
-    position: absolute;
-    padding: 20px;
-    top: 0;
-    
+.testimonials {
+  background: var(--color-bg-variant);
+  text-align: center;
 }
 
-.testimonials{
-    background: var(--color-bg-variant);
-    text-align: center;
-    padding: 2rem;
-    border-radius: 2rem;
-    user-select: none;
-}
-
-.client__title{
-    font-size: .9rem;
+.client__title {
+  font-size: 0.9rem;
 }
 
 .client__review {
-    color: var(--color-light);
-    font-weight: 400;
-    font-size: 1rem;
-    display: block;
-    width: 80%;
-    margin: .5rem auto 0;
+  color: var(--color-light);
+  font-weight: 400;
+  font-size: 1rem;
+  display: block;
+  width: 80%;
+  margin: 0.5rem auto 0;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
-    background-color: var(--color-primary);
-    width: 1.2rem;
-    height: 1.2rem;
+  background-color: var(--color-bg-variant);
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 /* =================== MEDIA QUERIES  (MEDIUM DEVICES) =================== */
 @media screen and (max-width: 1024px) {
-    .container.testimonials__container{
-        width: 60%;
-    }
+  .container.testimonials__container {
+    width: 60%;
+  }
 
-    .swiper-pagination-clickable .swiper-pagination-bullet {
-        width: .9rem;
-        height: .9rem;
-    }
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
 }
 
 /* =================== MEDIA QUERIES  (SMALL DEVICES) =================== */
 @media screen and (max-width: 600px) {
-    .container.testimonials__container{
-        width: var(--container-width-sm);
-    }
-    
-    .client__review{
-        width: var(--container-width-sm);
-    }
-    
-    .swiper-pagination-clickable .swiper-pagination-bullet {
-        width: .7rem;
-        height: .7rem;
-    }
+  .container.testimonials__container {
+    width: var(--container-width-sm);
+  }
+
+  .client__review {
+    width: var(--container-width-sm);
+  }
+
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
 }
